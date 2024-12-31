@@ -1,0 +1,48 @@
+name: nectar_app
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+  flutter_native_splash: ^2.4.1
+  google_fonts: ^6.2.1
+  flutter_screenutil: ^5.9.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/
+
+flutter_native_splash:
+  color: "#00A85A" # Use your green background color from the image.
+  image: assets/logo.png
+  branding: assets/branding.png
+  color_dark: "#00A85A" # Same green color for dark mode.
+  image_dark: assets/logo.png
+  branding_dark: assets/branding.png
+
+  android_12:
+    image: assets/logo.png
+    branding: assets/branding.png
+    branding_bottom_padding: 24
+    icon_background_color: "#00A85A"
+    image_dark: assets/logo.png
+    icon_background_color_dark: "#00A85A"
+
+  web: false
